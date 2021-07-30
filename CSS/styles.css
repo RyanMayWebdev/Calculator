@@ -1,0 +1,58 @@
+body{
+    background-image: -webkit-linear-gradient(90deg, rgb(1, 0, 48), #000);
+}
+
+button{
+    background-color: rgb(1, 110, 253);
+    border: none;
+    color: rgb(228, 228, 228);
+    font-size: 24px;
+    height: 50px;
+    margin: 5px;
+    width: 50px;
+}
+
+.calc {
+    display:flex;
+    justify-content: center;
+}
+
+.calc-wrapper{
+    align-items: center;
+    background-color: rgba(39, 119, 223, 0.37);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-evenly;
+    margin: 25vh auto;
+    width: 300px;
+}
+
+.equal-btn{
+    width: 115px;
+}
+.num-btn{
+    background-color:#00e7e7;
+}
+
+#number-log{
+    background-color: #d4d4d4;
+    border-radius: 5px;
+    height: 40px;
+    margin: 10px auto 0;
+    text-align: right;
+    width: 250px;
+}
+
+#number-log p {
+    margin: 15px 20px;
+}
+
+.num-wrapper{
+    width: 190px;
+}
+
+.operators-wrapper{
+    width: 55px;
+}
