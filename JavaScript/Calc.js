@@ -26,8 +26,10 @@ $(document).ready(function () {
     };
 
     const $calculate = () => {
-        $firstNum = parseInt($firstNum);
-        $secondNum = parseInt($secondNum);
+        $firstNum = parseFloat($firstNum);
+        $secondNum = parseFloat($secondNum);
+        console.log($firstNum);
+        console.log($secondNum)
         switch ($operator) {
             case '+':
                 $output.html(`<p>${$add($firstNum, $secondNum)}</p>`);
