@@ -16,6 +16,7 @@ button{
     width: 50px;
 }
 
+
 .calc {
     display:flex;
     justify-content: center;
@@ -38,6 +39,10 @@ button{
 }
 .num-btn{
     background-color:#00e7e7;
+}
+
+.btn-clicked{
+    background-color: rgb(0, 132, 255);
 }
 
 #number-log{

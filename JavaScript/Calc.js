@@ -52,6 +52,11 @@ $(document).ready(function () {
         $operator = ''
     }
 
+    $('button').on('click',function(){
+        this.classList.add('btn-clicked')
+        setTimeout(()=>this.classList.remove('btn-clicked'),200)
+    });
+
     $numBtns.on('click', function () {
         if ($operator === '') {
             $firstNum += this.value;
