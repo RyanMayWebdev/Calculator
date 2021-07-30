@@ -31,28 +31,23 @@ $(document).ready(function () {
         switch ($operator) {
             case '+':
                 $output.html(`<p>${$add($firstNum, $secondNum)}</p>`);
-                $firstNum = $output.text()
-                $secondNum = ''
                 break;
             case '*':
                 $output.html(`<p>${$multiply($firstNum, $secondNum)}</p>`);
-                $firstNum = $output.text()
-                $secondNum = ''
                 break;
             case '-':
                 $output.html(`<p>${$subtract($firstNum, $secondNum)}</p>`);
-                $firstNum = $output.text()
-                $secondNum = ''
                 break;
             case '/':
                 $output.html(`<p>${$divide($firstNum, $secondNum)}</p>`);
-                $firstNum = $output.text()
-                $secondNum = ''
                 break;
 
             default:
                 break;
         }
+        $firstNum = $output.text()
+        $secondNum = ''
+        $operator = ''
     }
 
     $numBtns.on('click', function () {
@@ -69,14 +64,10 @@ $(document).ready(function () {
     $opBtns.on('click', function () {
         if ($operator != '') {
             $calculate();
-            $operator = this.value;
-            $log += $operator;
-            $output.html(`<p>${$log}</p>`)
-        } else {
-            $operator = this.value;
-            $log += $operator;
-            $output.html(`<p>${$log}</p>`)
         }
+        $operator = this.value;
+        $log += $operator;
+        $output.html(`<p>${$log}</p>`)
     })
 
     $('.clear-btn').on('click', () => $clear())
