@@ -47,6 +47,7 @@ $(document).ready(function () {
             default:
                 break;
         }
+        console.log('this ran')
         $firstNum = $output.text()
         $secondNum = ''
         $operator = ''
@@ -63,7 +64,8 @@ $(document).ready(function () {
             $log = $firstNum;
         } else {
             $secondNum += this.value;
-            $log += $secondNum;
+            console.log($secondNum)
+            $log = $firstNum + $operator + $secondNum;
         }
         $output.html(`<p>${$log}</p>`)
     })
